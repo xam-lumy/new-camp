@@ -1,0 +1,31 @@
+i am here again
+then
+const {readFile, writeFile}= require('fs')
+console.log('start')
+readFile('string.txt', 'utf8', (err, result)=>{
+    if(err){
+        return 
+        console.log(err)
+    }
+    const first= result;
+    readFile('sing.txt', 'utf8', (err, result2)=>{
+        if(err){
+        return
+        }
+        const second= result2;
+        writeFile( 'one.txt', `this is the callback: ${first}. ${second}`, (err, result)=>{
+            if(err){
+                return
+            }
+            else{
+                console.log('finished');
+            }
+        })
+        })
+    })
+    console.log('restarting')
+    
+
+
+
+

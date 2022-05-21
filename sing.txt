@@ -1,0 +1,24 @@
+its good to be back
+okay
+const { resolveSoa } = require('dns')
+const http= require('http')
+const server= http.createServer((req, res) => {
+    if(req.url === '/' ){
+        res.end('Welcome To Home page')
+    }
+    if(req.url === '/about'){
+        res.end('This is a brief history about us')
+    }
+    res.end(`
+    <h1>Oops!</h1>
+    <p>Kindly go back to the home page </p>
+        <a href= "/">Home page</a>
+    `)
+
+})
+
+server.listen(5000) 
+
+
+ 
+

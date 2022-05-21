@@ -1,0 +1,24 @@
+this is the result: its good to be back
+
+ i am here again
+
+
+
+this is the result: its good to be back
+okay
+
+ i am here again
+then
+const { readFileSync, writeFileSync }= require('fs');
+console.log('getting ready to start');
+const first = readFileSync('sing.txt', 'utf8')
+const second = readFileSync('string.txt', 'utf8')
+
+writeFileSync('amen.txt', 
+     `this is the result: ${first} ${second}`,
+     {flag:'a'},
+)
+
+
+
+
