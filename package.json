@@ -4,13 +4,18 @@
   "description": "",
   "main": "guitar.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node guitar.js",
+    "dev": "nodemon guitar.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
+    "express": "^4.18.1",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }
